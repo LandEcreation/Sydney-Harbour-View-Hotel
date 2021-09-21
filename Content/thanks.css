@@ -1,0 +1,15 @@
+﻿
+
+
+ .body-content > .container-fluid {
+    padding: 4% 14%;
+  text-align: center;
+}
+
+h3 {
+    text-align: center;
+    font-weight:bold;
+}
+.edit-btn{
+    color:blue;
+}

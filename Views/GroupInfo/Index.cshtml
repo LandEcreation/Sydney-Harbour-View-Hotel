@@ -1,0 +1,58 @@
+﻿@model IEnumerable<SydneyHotelFinalWebApp.Models.GroupInfo>
+
+
+
+<video autoplay muted loop id="myVideo">
+    <source src="~/Videos/harborview.mp4" type="video/mp4">
+</video>
+
+<h2>Event Management System <br />
+    <span> Group Inforamtion</span>
+    </h2>
+<table class="table">
+    <tr>
+        <th>
+          Student Name
+        </th>
+        <th>
+        Student ID
+        </th>
+        <th>
+        Contribution
+        </th>
+        <th>
+          Tutor Name
+        </th>
+        <th></th>
+    </tr>
+
+@foreach (var item in Model) {
+    <tr>
+        <td>
+            @Html.DisplayFor(modelItem => item.StudentName)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.StudentID)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Contribution)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.TutotName)
+        </td>
+        <td>
+            @Html.ActionLink("Edit", "Edit", new { id=item.GroupInfoID }) |
+            @Html.ActionLink("Details", "Details", new { id=item.GroupInfoID }) |
+            @Html.ActionLink("Delete", "Delete", new { id=item.GroupInfoID })
+        </td>
+    </tr>
+}
+
+</table>
+
+<a href="/Home/Index" class="btn btn-lg btn-danger"> Exit</a>
+<a href="/GroupInfo/Create" class="btn btn-lg btn-secondary"> Back</a>
+
+@*<p>
+    @Html.ActionLink("Back", "Create")
+</p>*@

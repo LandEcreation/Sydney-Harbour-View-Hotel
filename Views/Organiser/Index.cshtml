@@ -1,0 +1,73 @@
+﻿@model IEnumerable<SydneyHotelFinalWebApp.Models.Organiser>
+
+
+
+<h2>Organiser Details</h2>
+
+<p>
+    @Html.ActionLink("Create New", "Create")
+</p>
+<table class="table">
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.OrganiserName)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.OrganiserPhone)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.OrganiserEmail)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.EventName)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.PartyNames)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.EventStart)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.EventEnd)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.TotalMember)
+        </th>
+        <th></th>
+    </tr>
+
+@foreach (var item in Model) {
+    <tr>
+        <td>
+            @Html.DisplayFor(modelItem => item.OrganiserName)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.OrganiserPhone)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.OrganiserEmail)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.EventName)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.PartyNames)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.EventStart)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.EventEnd)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.TotalMember)
+        </td>
+        <td>
+            @Html.ActionLink("Edit", "Edit", new { id=item.OrganiserID }) |
+            @Html.ActionLink("Details", "Details", new { id=item.OrganiserID }) |
+            @Html.ActionLink("Delete", "Delete", new { id=item.OrganiserID })
+        </td>
+    </tr>
+}
+
+</table>

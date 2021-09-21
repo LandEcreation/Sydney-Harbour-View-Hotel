@@ -1,0 +1,66 @@
+﻿@model SydneyHotelFinalWebApp.Models.Registration
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>Registration</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.Attendee.CustomerName)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Attendee.CustomerName)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Organiser.OrganiserName)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Organiser.OrganiserName)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Party.PartyNames)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Party.PartyNames)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.EventStart)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.EventStart)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.EventEnd)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.EventEnd)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.NoofMembers)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.NoofMembers)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.RegistrationID }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>

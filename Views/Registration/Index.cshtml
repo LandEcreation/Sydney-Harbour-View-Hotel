@@ -1,0 +1,61 @@
+﻿@model IEnumerable<SydneyHotelFinalWebApp.Models.Registration>
+
+
+
+<h2>Customer Information Center</h2>
+
+<p>
+    @Html.ActionLink("Create New", "Create")
+</p>
+<table class="table">
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.Attendee.CustomerName)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Organiser.OrganiserName)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Party.PartyNames)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.EventStart)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.EventEnd)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.NoofMembers)
+        </th>
+        <th></th>
+    </tr>
+
+@foreach (var item in Model) {
+    <tr>
+        <td>
+            @Html.DisplayFor(modelItem => item.Attendee.CustomerName)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Organiser.OrganiserName)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Party.PartyNames)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.EventStart)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.EventEnd)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.NoofMembers)
+        </td>
+        <td>
+            @Html.ActionLink("Edit", "Edit", new { id=item.RegistrationID }) |
+            @Html.ActionLink("Details", "Details", new { id=item.RegistrationID }) |
+            @Html.ActionLink("Delete", "Delete", new { id=item.RegistrationID })
+        </td>
+    </tr>
+}
+
+</table>

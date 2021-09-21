@@ -1,0 +1,30 @@
+﻿@model IEnumerable<SydneyHotelFinalWebApp.Models.Party>
+
+
+<h2>Parties Details</h2>
+
+<p>
+    @Html.ActionLink("Create New", "Create")
+</p>
+<table class="table">
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.PartyNames)
+        </th>
+        <th></th>
+    </tr>
+
+@foreach (var item in Model) {
+    <tr>
+        <td>
+            @Html.DisplayFor(modelItem => item.PartyNames)
+        </td>
+        <td>
+            @Html.ActionLink("Edit", "Edit", new { id=item.PartyID }) |
+            @Html.ActionLink("Details", "Details", new { id=item.PartyID }) |
+            @Html.ActionLink("Delete", "Delete", new { id=item.PartyID })
+        </td>
+    </tr>
+}
+
+</table>

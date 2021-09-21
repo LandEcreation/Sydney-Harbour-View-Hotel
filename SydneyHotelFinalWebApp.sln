@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.31702.278
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SydneyHotelFinalWebApp", "SydneyHotelFinalWebApp.csproj", "{20A1B9ED-A758-4D7C-9504-AC85C8F2CDBD}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{20A1B9ED-A758-4D7C-9504-AC85C8F2CDBD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{20A1B9ED-A758-4D7C-9504-AC85C8F2CDBD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{20A1B9ED-A758-4D7C-9504-AC85C8F2CDBD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{20A1B9ED-A758-4D7C-9504-AC85C8F2CDBD}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {D34684FA-343D-4FBC-BA5A-4A0B5421EDFC}
+	EndGlobalSection
+EndGlobal

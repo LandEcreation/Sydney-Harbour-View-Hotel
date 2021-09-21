@@ -1,0 +1,22 @@
+﻿
+
+
+
+.body-content #about .container-fluid {
+    padding: 4% 0%;
+}
+
+#about {
+}
+
+.page-heading {
+    font-size: 3rem;
+    margin-bottom: 5%;
+    text-align: center;
+}
+
+.about-paragraph {
+    text-align: left;
+    line-height: 1.7;
+    font-size: 1.4rem;
+}
